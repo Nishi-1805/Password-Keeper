@@ -58,14 +58,9 @@ function displayUserOnScreen(userDetails) {
       updatePasswordCount();
     })
     .catch((error)=>console.log(error));
-    //userList.removeChild(event.target.parentElement);
-    //localStorage.removeItem(userDetails.email);
   });
 
   editBtn.addEventListener("click", function (event) {
-    
-    
-   // localStorage.removeItem(userDetails.email);
     document.getElementById("title").value = userDetails.title;
     document.getElementById("password").value = userDetails.password;
     
